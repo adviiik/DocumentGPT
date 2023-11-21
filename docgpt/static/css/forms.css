@@ -1,0 +1,10 @@
+/* static/css/forms.css */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}

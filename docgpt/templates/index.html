@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<html>
+  <head>
+    <title>Document Processor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <form action="/" method="post" enctype="multipart/form-data">
+        <h2>Document Processor</h2>
+        <p>Select a .pdf or .txt file to upload:</p>
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+      </form>
+    </div>
+  </body>
+</html>

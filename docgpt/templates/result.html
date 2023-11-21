@@ -1,0 +1,17 @@
+<!-- templates/result.html -->
+<html>
+  <head>
+    <title>Document Processor - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Document Processor - Result</h2>
+      <div id="result">
+        <p>{{ text }}</p>
+      </div>
+    </div>
+  </body>
+</html>
